@@ -65,17 +65,17 @@ public class AResource {
 
     @Path("b") @GET
     public BDto get(@QueryParam("name") String name) {
-        ...
+        //...
     }
 
     @Path("c") @GET
     public CDto get(@BeanParam BeanX bean) {
-        ...
+        //...
     }
 
     @Path("d") @GET
     public DDto get(@DefaultValue("BlaBla") @QueryParam("str") String str) {
-        ...
+        //...
     }
 
 }
