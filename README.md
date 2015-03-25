@@ -50,7 +50,7 @@ public class AResource {
         ADto result = new ADto(linker.proxy(AResource.class, (o) -> o.getA()));
 
         //link to resource b  (/b?name=specificB)
-        result.links.add("b, linker.link(AResource.class, (o) -> o.getB("specificB")));
+        result.links.add("b", linker.link(AResource.class, (o) -> o.getB("specificB")));
 
         //also BeanParams are supported
         result.links.add("a", linker.link(AResource.class, (o) -> o.getC(new BeanX(...))));
