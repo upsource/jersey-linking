@@ -57,6 +57,12 @@ public class Linker {
         return delegate[0];
     }
 
+    public <R, O> Link linkFull(final Class<R> clazz, Function<R, O> producer) {
+
+        ResourceResultDelegate delegate = proxy(clazz, producer);
+        return new Link(delegate.getHttpMethod(), delegate.getLink());
+    }
+
     public <R, O> String link(final Class<R> clazz, Function<R, O> producer) {
 
         return proxy(clazz, producer).getLink();

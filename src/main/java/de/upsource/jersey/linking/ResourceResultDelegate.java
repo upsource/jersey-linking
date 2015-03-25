@@ -15,6 +15,7 @@ public class ResourceResultDelegate {
     private String template;
     private String fullTemplate;
     private String link;
+    private String httpMethod;
 
     public ResourceResultDelegate(ResourceMethodRef resourceMethodRef,
                                   Object[] methodArguments) throws InvocationTargetException, IllegalAccessException, UnsupportedEncodingException {
@@ -30,6 +31,7 @@ public class ResourceResultDelegate {
         }
         URI linkUri = linkUriBuilder.build();
         link = linkUri.toString();
+        httpMethod = resourceMethodRef.getHttpMethod();
         fullTemplate = linkUri.getPath() + resourceMethodRef.getTemplateQueryParams();
     }
 
@@ -82,5 +84,9 @@ public class ResourceResultDelegate {
 
     public String getLink() {
         return link;
+    }
+
+    public String getHttpMethod() {
+        return httpMethod;
     }
 }
