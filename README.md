@@ -9,9 +9,9 @@ Alternatives:
 
 TODOs:
  * MatrixParam: uri-template do not support MatrixParams now
- * BeanParams: implement constructor injected parameters
+ * BeanParams: implement support for constructor injected parameters
  * UriTemplate: test and fix full template
- * BeanParams: test nested BeanParams
+ * BeanParams: test nested BeanParam support
 
 How to use:
  * see test classes or the incomplete example below
