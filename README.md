@@ -85,3 +85,4 @@ public class AResource {
 How it works:
  * the library uses objenesis (http://objenesis.org/)
  * proxies for resource methods are created (return type is exchanged)
+ * also see https://github.com/upsource/jersey-linking/blob/master/src/main/java/de/upsource/jersey/linking/ResourceModelProcessor.java
