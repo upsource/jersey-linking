@@ -14,7 +14,8 @@ TODOs:
  * BeanParams: test nested BeanParam support
 
 How to use:
- * see test classes or the incomplete example below
+ * see test classes here: https://github.com/upsource/jersey-linking/tree/master/src/test/java/de/upsource/jersey/linking
+  (or the incomplete example below)
 
 ```java
 //a transfer object, containing lists of links and uri-templates
