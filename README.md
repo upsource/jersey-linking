@@ -1,4 +1,4 @@
-## imperative Linking !!! Caution: experimental library !!!
+## Imperative Hyperlinking
 
 Goal: we need a comfortable imperative way to create hypermedia-links (between jersey resources)
 Instead of using strings to specify links and uri-templates, the new cool feature "Method references" (Java 8) is used.
@@ -11,7 +11,6 @@ TODOs:
  * MatrixParam: uri-template do not support MatrixParams now
  * BeanParams: implement support for constructor injected parameters
  * UriTemplate: test and fix full template
- * BeanParams: test nested BeanParam support
 
 How to use:
  * see test classes here: https://github.com/upsource/jersey-linking/tree/master/src/test/java/de/upsource/jersey/linking
