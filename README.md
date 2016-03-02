@@ -1,4 +1,4 @@
-## Imperative Hyperlinking
+## Jersey Imperative Hyperlinking
 
 Goal: we need a comfortable imperative way to create hypermedia-links (between jersey resources)
 Instead of using strings to specify links and uri-templates, the new cool feature "Method references" (Java 8) is used.
